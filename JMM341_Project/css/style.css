@@ -1,23 +1,146 @@
-/* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333333;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  line-height: 1.8;
+  background-color: #f4f4f4;
+  color: #333;
   padding: 20px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "footer";
+  grid-gap: 20px;
 }
 
-/* Header */
+/* Link Styling */
+a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #ff0b0b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #7fa3f8;
+}
+
+/* Header Styling */
 header {
-  background-color: #333333;
-  color: #fc1493;
-  padding: 20px;
+  grid-area: header;
   text-align: center;
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Navigation Styling */
+nav {
+  grid-area: nav;
+  background-color: #34495e;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Main Section Styling */
+main {
+  grid-area: main;
+  background-color: white;
+  padding: 20px;
   border-radius: 8px;
+  max-width: 960px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 30px;
+  max-width: 960px;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+section h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #16a085;
+}
+
+/* Article Styling */
+article {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  max-width: 960px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #131313;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #34495e;
+  color: white;
+}
+
+/* Image Styling */
+figure {
+  text-align: center;
+  margin-top: 20px;
+}
+
+figure img {
+  border-radius: 8px;
+  border: 2px solid #2f2c2c;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+  color: #6a6868;
+}
+
+/* Footer Styling */
+footer {
+  grid-area: footer;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #6a6868;
 }
