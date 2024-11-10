@@ -68,13 +68,11 @@ main {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  max-width: 960px;
 }
 
 /* Section Styling */
 section {
   margin-bottom: 30px;
-  max-width: 960px;
 }
 
 section h2 {
@@ -96,13 +94,11 @@ article {
   background-color: #f9f9f9;
   border-radius: 5px;
   border: 1px solid #ddd;
-  max-width: 960px;
 }
 
 /* Table Styling */
 table {
   width: 100%;
-  margin: 20px 0;
 }
 
 table th,
