@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  line-height: 1.8;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "footer";
+  grid-gap: 20px;
+}
