@@ -19,3 +19,23 @@ body {
   "footer";
   grid-gap: 20px;
 }
+
+/* Link Styling */
+  a:link { 
+    color: #00b7ff;
+    text-decoration: none;
+  }
+    
+  a:visited {
+    color: #7fa3f8;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #ff0b0b;
+  }
+  
+  
