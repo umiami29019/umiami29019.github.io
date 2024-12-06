@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto", "Open Sans", sans-serif;
   line-height: 1.8;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   color: #333;
   padding: 20px;
   max-width: 960px;
@@ -21,19 +21,19 @@ body {
 }
 
 /* Link Styling */
-  a:link { 
+  a { 
     color: #00b7ff;
     text-decoration: none;
+  }  
+  a:link {
+    color: #00b7ff;
   }
-    
   a:visited {
     color: #7fa3f8;
   }
-  
   a:hover {
     text-decoration: underline;
   }
-
   a:active {
     color: #ff0b0b;
   }
