@@ -16,6 +16,7 @@ body {
 header {
   text-align: center;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 header h1 {
@@ -25,18 +26,33 @@ header h1 {
 }
 
 /* Navigation Bar Styling */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
 .nav-bar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-  }
-  
-  .nav-bar li {
-    padding: 10px 15px;
-  }
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the links */
+}
+
+.nav-bar li {
+  padding: 0 20px;
+}
+
+.nav-bar a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: #ff0b0b;
+  text-decoration: underline;
+}
 
 /* Link Styling for Page Content */
 a {
@@ -97,6 +113,7 @@ footer {
   border-radius: 5px;
   border: 1px solid #ddd;
 }
+
 
 /*
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
