@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
+/* General Body Styling */
 body {
   font-family: "Roboto", "Open Sans", sans-serif;
   line-height: 1.8;
@@ -9,18 +10,122 @@ body {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: 
-  "header"
-  "nav"
-  "main"
-  "footer";
-  grid-gap: 20px;
 }
 
-/* Link Styling */
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #004d99;
+  margin: 0;
+}
+
+/* Navigation Bar Styling */
+.nav-bar {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar a {
+  font-weight: bold;
+  color: #004d99;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar a:hover {
+  color: #00b7ff;
+  border: 2px solid #00b7ff;
+  background-color: #f0f8ff;
+}
+
+/* Link Styling for Page Content */
+a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+a:link {
+  color: #00b7ff;
+}
+a:visited {
+  color: #7fa3f8;
+}
+a:hover {
+  text-decoration: underline;
+  color: #003d66;
+}
+a:active {
+  color: #ff0b0b;
+  background-color: #ffe6e6;
+}
+
+/* Main Content Grid Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: auto; /* Automatic row height */
+  gap: 20px;
+  grid-template-areas: 
+    "section1 section2"
+    "section3 section4";
+}
+
+/* Section Styling */
+section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for images */
+  gap: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  line-height: 1.8;
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
   a { 
     color: #00b7ff;
     text-decoration: none;
@@ -37,5 +142,6 @@ body {
   a:active {
     color: #ff0b0b;
   }
-  
+
+  */
   
