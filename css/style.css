@@ -26,31 +26,17 @@ header h1 {
 
 /* Navigation Bar Styling */
 .nav-bar {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.nav-bar li {
-  display: inline;
-}
-
-.nav-bar a {
-  font-weight: bold;
-  color: #004d99;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-bar a:hover {
-  color: #00b7ff;
-  border: 2px solid #00b7ff;
-  background-color: #f0f8ff;
-}
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+  }
+  
+  .nav-bar li {
+    padding: 10px 15px;
+  }
 
 /* Link Styling for Page Content */
 a {
