@@ -6,10 +6,10 @@ body {
   line-height: 1.5;
   background-color: #ffffff;
   color: #333;
-  padding: 20px;
   max-width: 920px;
   width: 100%;
   margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header Styling */
@@ -41,7 +41,7 @@ nav {
   margin: 0;
   width: 100%;
   display: flex;
-  justify-content: center; /* Center the links */
+  justify-content: center;
 }
 
 .nav-bar li {
@@ -49,9 +49,13 @@ nav {
 }
 
 .nav-bar a {
-  color: rgb(254, 254, 254);
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
+}
+
+.nav-bar a:link {
+  color: #ffffff;
 }
 
 .nav-bar a:hover {
@@ -82,8 +86,8 @@ a:active {
 /* Main Content Grid Layout */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  grid-template-rows: auto; /* Automatic row height */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto; 
   gap: 20px;
   grid-template-areas: 
     "section1 section2"
@@ -109,7 +113,7 @@ footer {
 /* Image Gallery Styling */
 .image-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns for images */
+  grid-template-columns: 1fr 1fr; 
   gap: 10px;
 }
 
@@ -126,8 +130,8 @@ footer {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Horizontal centering */
+    box-shadow: 0 4px 8px #000000;
+    margin: 0 auto; 
     display: flex;
   }
   
